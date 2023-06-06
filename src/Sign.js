@@ -90,7 +90,7 @@ function Sign() {
     <form onSubmit={handleSubmetted} action =""  method="post" className="form">   {/*указать данные страницы, где будет обрабатываться форма*/}
       <div className='form_sign'>
         
-        <Link to="/"> <CloseOutlined  className="close_cross_sign"/> </Link> 
+        <Link to="/form"> <CloseOutlined  className="close_cross_sign"/> </Link> 
         <h2 className="sign_title">SIGN UP</h2>
 
         <div className="username_block">

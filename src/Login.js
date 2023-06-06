@@ -55,7 +55,7 @@ function Login() {
     <form  onSubmit={handleSubmetted} action ="" method="post" className="form"> {/*указать данные страницы, где будет обрабатываться форма*/}
       <div className='form_login'>
         
-        <Link to="/">  <CloseOutlined  className="close_cross_login"/></Link> 
+        <Link to="/form">  <CloseOutlined  className="close_cross_login"/></Link> 
         <h2>LOGIN</h2>
 
         <div className="username_block">

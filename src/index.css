@@ -1,13 +1,243 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  box-sizing: border-box;
+
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('mountain.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+  .container {
+  width: 700px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+  
+  .cont_login,
+  .cont_sign  {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 35px -15px rgba(0, 0, 0, 0.8);
+  }
+
+  .cont_login {
+    background-color: rgba(198, 215, 234, 0.8);
+  }
+
+  .cont_sign  {
+    background-color: rgba(222, 235, 250, 0.8);
+  }
+
+  .cont_login_center,
+  .cont_sign_center {
+    width: 250px;
+    height: 140px;
+    background-color: rgba(66, 104, 143, 0.3);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  h2.sign_title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .button_cont_login,
+  .button_cont_sign  {
+    margin-top: 15px;
+  }
+
+  .button_login {
+    margin-top: 5px;
+    width: 210px;
+    padding: 6px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    background-color: rgb(53, 127, 255);
+    border: 1px solid  rgb(53, 127, 255);
+  }
+  .button_login:hover,
+  .button_login:active{
+    background-color:rgb(22, 169, 255);
+    border: 1px solid  rgb(22, 169, 255);
+    box-shadow: rgb(248, 248, 249);
+  }
+
+  .button_login:disabled {
+    color: white;
+    background-color: rgb(133, 177, 243);
+    border: 1px solid  rgb(133, 177, 243);
+    cursor:not-allowed;
+  }
+
+  .button_sign {
+    width: 210px;
+    padding: 6px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    background-color: rgb(255, 82, 82);
+    border: 1px solid rgb(255, 82, 82);
+  }
+
+  .button_sign:hover,
+  .button_sign:active {
+    background-color: rgb(255, 102, 102);
+    border: 1px solid   rgb(255, 102, 102);
+    box-shadow: rgb(248, 248, 249);
+  }
+  
+  .button_sign:disabled {
+    color: white;
+    background-color: rgb(245, 131, 131);
+    border: 1px solid rgb(245, 131, 131);
+    cursor: not-allowed;
+  }
+  
+.form_login,
+.form_sign {
+    width: 350px;
+    height: 460px;
+    background-color: rgba(198, 215, 234, 0.8);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.4);
+    position: relative;
+          
+}
+
+.form_login.hidden {
+   opacity: 0;
+}
+
+
+.form_sign {
+    background-color: rgba(222, 235, 250, 0.8);
+  }
+ 
+
+ .ant-input::-webkit-input-placeholder {
+   color:  rgb(102, 101, 101);
+ } 
+ 
+.username_block,
+.password_block,
+.email_block,
+.confirm_block,
+.submit_block {
+   height: 68px  ;
+   
+ }
+
+ .error-message {
+   color: rgb(231, 3, 3);
+   font-size: 14px;
+   padding-left: 5px;
+   letter-spacing: 0.5px;
+   padding-bottom: 0;
+ }
+
+.log_input { 
+    
+    width: 280px;
+    height: 40px;
+    margin-bottom: 2px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+ }
+
+ .close_cross_login {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: gray;
+ }
+
+ .close_cross_sign {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: gray;
+ }
+ .close_cross_login:hover,
+ .close_cross_sign:hover,
+ .close_cross_login:active,
+ .close_cross_sign:active {
+   color: rgb(75, 75, 254);
+ }
+
+.checkbox {
+  color: rgb(104, 104, 104);
+  letter-spacing: 0.3px;
+  align-self: flex-start;
+  margin-left: 36px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}  
+
+
+.success-message {
+  margin-top: 10px;
+  margin-left: 25px;
+  color: rgb(98, 98, 98);
+}
+
+/*-------анимация-------*/
+
+.animation-enter {
+  opacity: 0;
+}
+
+.animation-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.animation-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.animation-appear {
+  opacity: 0;
+}
+
+.animation-appear-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
 }
